@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/portfolio.webp" type="image/x-icon">
     <title>Document</title>
+    <link rel="stylesheet" href="./cssportfolio/reset.css">
+    <link rel="stylesheet" href="./cssportfolio/style.css">
     <script src="https://kit.fontawesome.com/d59bc2ea1d.js" crossorigin="anonymous"></script>   
 </head>
 <body>
@@ -14,7 +16,7 @@
             <a href="">About</a>
             <a href="">My Skills</a>
             <a href="">My Work</a>
-            <a href="">Contact me</a>
+            <a href="">Contact Me</a>
         </nav>
         <section>
             <img src="./assets/icons/english.webp" alt="englishflag">
@@ -22,7 +24,7 @@
         </section>
     </header>
     <main>
-        <section>
+        <section id="intro">
             <article>
                 <p>Hi, My name is</p>
                 <p>Imran <span>Ghaddoura</span>,</p>
@@ -33,24 +35,68 @@
                 </div>
             </article>
             <article>
-                <img src="./assets/images/mezelf.webp" alt="imran">
+                <img src="./assets/images/mezelf.webp" id="mezelf" alt="imran">
             </article>
         </section>
-        <section>
-            <article>
-                <p>About me</p>
+        <section id="aboutme">
+            <article id="aboutmetext">
+                <h1>About me</h1>
                 <p>Ik sta open voor alle werk en ben dus bereid om alles te doen. Ik wil veel nieuwe kennis opdoen en nieuwe mensen leren kennen. Ik ben een enthousiaste, leergierige hardwerkende persoon. Ik kan heel goed alleen en ook in teamverband werken. Met mijn academische basis ben ik vastberaden om mijn vaardigheden in C#, OOP, webontwikkeling en SQL verder te ontwikkelen en te verfijnen in de praktijk. Op mij kunnen jullie rekenen! </p>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="./assets/images/mezelf.webp" alt="">
             </article>
         </section>
-        <section>
+        <section id="myservices">
+            <article>
+                <h1>My Services</h1>
+            </article>
+            <article id="myservicesdivs">
+                <div>
+                    <h2>Creative graphic design</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h2>Interactive frontend development</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>User experience</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Maintenance and technical support</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section id="myskills">
             <article>
                 <img src="" alt="">
             </article>
             <article>
-                <p>My Skills</p>
+                <h1>My Skills</h1>
                 <div>
                     <img src="" alt="">
                     <img src="" alt="">
@@ -58,9 +104,9 @@
                 </div>
             </article>
         </section>
-        <section>
+        <section id="mywork">
             <article>
-                <p>My Work</p>
+                <h1>My Work</h1>
             </article>
             <article>
                 <figure>
@@ -77,9 +123,9 @@
                 </figure>
             </article>
         </section>
-        <section>
+        <section id="contactme">
             <article>
-                <p>Contact Me</p>
+                <h1>Contact Me</h1>
                 <div>
                     <div><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
                     <div><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
