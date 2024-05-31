@@ -13,10 +13,11 @@
     <header id="#top">
         <p>Imran <span>Ghaddoura</span></p>
         <nav>
-            <a href="">About</a>
-            <a href="">My Skills</a>
-            <a href="">My Work</a>
-            <a href="">Contact Me</a>
+            <a href="#aboutme">Over</a>
+            <a href="#myskills">Mijn Skills</a>
+            <a href="#myservices">Mijn Services</a>
+            <a href="#mywork">Mijn Werk</a>
+            <a href="#contactme">Contacteer Me</a>
         </nav>
         <section>
             <img src="./assets/icons/english.webp" alt="englishflag">
@@ -26,12 +27,12 @@
     <main>
         <section id="intro">
             <article>
-                <p>Hi, My name is</p>
-                <p>Imran <span>Ghaddoura</span>,</p>
-                <p>I'am a Full Stack Developer</p>
-                <div>
-                    <a href="/download/CV_Imran_Ghaddoura.pdf" download="CV_Imran_Ghaddoura.pdf">CV <i class="fa-solid fa-download"></i></a>
-                    <a href="/contact">Let's  talk <i class="fa-regular fa-paper-plane"></i></a>
+                <p id="intoTekst1">Hi, My name is</p>
+                <p class="infoTekst2">Imran <span>Ghaddoura</span>,</p>
+                <p class="infoTekst2">I'am a Full Stack Developer</p>
+                <div >
+                    <a href="/download/CV_Imran_Ghaddoura.pdf" id="downloadButton" download="CV_Imran_Ghaddoura.pdf">CV <i class="fa-solid fa-download"></i></a>
+                    <a href="/contact" id="talkButton">Let's  talk    <i class="fa-regular fa-paper-plane"></i></a>
                 </div>
             </article>
             <article>
@@ -40,7 +41,7 @@
         </section>
         <section id="aboutme">
             <article id="aboutmetext">
-                <h1>About me</h1>
+                <h1>About <span>me</span></h1>
                 <p>Ik sta open voor alle werk en ben dus bereid om alles te doen. Ik wil veel nieuwe kennis opdoen en nieuwe mensen leren kennen. Ik ben een enthousiaste, leergierige hardwerkende persoon. Ik kan heel goed alleen en ook in teamverband werken. Met mijn academische basis ben ik vastberaden om mijn vaardigheden in C#, OOP, webontwikkeling en SQL verder te ontwikkelen en te verfijnen in de praktijk. Op mij kunnen jullie rekenen! </p>
             </article>
             <article>
@@ -49,7 +50,7 @@
         </section>
         <section id="myservices">
             <article>
-                <h1>My Services</h1>
+                <h1>My <span>Services</span></h1>
             </article>
             <article id="myservicesdivs">
                 <div>
@@ -93,54 +94,82 @@
         </section>
         <section id="myskills">
             <article>
-                <img src="" alt="">
+                <img src="./assets/images/mezelf.webp" alt="">
             </article>
             <article>
-                <h1>My Skills</h1>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <h1>My <span>Skills</span></h1>
+                <div id="allSkills">
+                    <div class="skills">
+                        <img src="./assets/icons/javascript.webp" alt="javascript" class="skillsIcons skillsVierkant">
+                    </div>
+                    <div class="skills">
+                        <img src="./assets/icons/typescript.webp" alt="typescript" class="skillsIcons skillsVierkant">
+                    </div>
+                    <div class="skills">
+                        <img src="./assets/icons/html.webp" alt="html" class="skillsIcons">
+                    </div>
+                    <div class="skills"> 
+                        <img src="./assets/icons/css.webp" alt="css" class="skillsIcons">
+                    </div>
+                    <div class="skills">
+                        <img src="./assets/icons/csharp.webp" alt="csharp" class="skillsIcons">
+                    </div>
+                    <div class="skills">
+                        <img src="./assets/icons/mongo.webp" alt="mongo" class="skillsIcons">
+                    </div>
+                    <div class="skills">
+                        <img src="./assets/icons/sql.webp" alt="sql" class="skillsIcons">
+                    </div>
                 </div>
             </article>
         </section>
         <section id="mywork">
+            <h1>My <span>Work</span></h1>
             <article>
-                <h1>My Work</h1>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+                <a href="">
+                    <figure class="myworkfigure myworkfigure1">
+                        <figcaption>Admin UI (Express)</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure class="myworkfigure myworkfigure2">
+                        <figcaption>Webshop (HTML & CSS)</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure class="myworkfigure myworkfigure3">
+                        <figcaption>Library (C#)</figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure class="myworkfigure myworkfigure4">
+                        <figcaption>Card Game (Express)</figcaption>
+                    </figure>
+                </a>
             </article>
         </section>
         <section id="contactme">
+            <h1>Contact <span>Me</span></h1>
             <article>
-                <h1>Contact Me</h1>
-                <div>
-                    <div><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
-                    <div><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
-                    <div><i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+32489699900">+32489699900</a></div>
-                </div>
+                <div><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
+                <div><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
+                <div><i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+32489699900">+32489699900</a></div>
             </article>
+            <form action="/" method="post" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="vraag">Vraag:</label>
+                <textarea name="vraag" id="vraag" cols="30" rows="10"></textarea>
+            </form>
         </section>
     </main>
     <footer>
         <article>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/imran-ghaddoura-b1b778255/"><i class="fa-brands fa-linkedin"></i></a>
         </article>
         <article>
             <p>&copy; 2024 All Rights Reserved. By</p>
-            <p>Imran Ghaddoura</p>
+            <p id="namefooter">Imran Ghaddoura</p>
         </article>
         <article>
             <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
