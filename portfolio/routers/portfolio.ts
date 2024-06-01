@@ -30,7 +30,7 @@ export default function portfolioRouter() {
                 post: req.session.post
             });
         } else {
-            res.render("contact_,en", {
+            res.render("contact_en", {
                 contact: true,
                 message: req.session.message,
                 post: req.session.post
@@ -59,11 +59,13 @@ export default function portfolioRouter() {
 
     router.get("/nl", (req, res) => {
         req.session.language = "nl";
+        req.session.message = undefined;
         res.redirect("back");
     });
 
     router.get("/en", (req, res) => {
         req.session.language = "en";
+        req.session.message = undefined;
         res.redirect("back");
     });
     

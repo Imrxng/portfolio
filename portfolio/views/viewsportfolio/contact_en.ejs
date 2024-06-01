@@ -1,22 +1,25 @@
-<%- include("partials/header_en") %>
+<%- include("partials/header") %>
     <main id="maincontact">
         <h1>Contact <span>Me</span></h1>
         <section>
             <form action="/" method="post" id="contactForm">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" value="<% if (post) { %><%= post.name %><% } %>">
                 <label for="mail">Mail:</label>
-                <input type="text" name="mail" id="email">
-                <label for="vraag">Question:</label>
-                <textarea name="vraag" id="vraag" cols="30" rows="10"></textarea><br>
+                <input type="text" name="mail" id="email" value="<% if (post) { %><%= post.mail %><%} %>">
+                <label for="text">Question:</label>
+                <textarea name="text" id="text" cols="30" rows="10"><% if (post) { %><%= post.text %><% } %></textarea><br>
                 <button class="Button" id="submitButton">Deliver     <i class="fa-regular fa-paper-plane" id="submitButton"></i></button>
             </form>
             <div id="map"></div>
         </section>
+        <% if (message) { %>
+            <p id="message" <% if (message === "Your message has been successfully sent." || message === "Uw bericht is succesvol verzonden.") { %> style="color: #dcf763" <%} %>><%= message %></p>
+        <% }; %>
         <section>
             <div class="contactemoj"><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
             <div class="contactemoj"><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
             <div class="contactemoj"><i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+32489699900">+32489699900</a></div>
         </section>
     </main>
-<%- include("partials/footer_en") %>
+<%- include("partials/footer") %>
