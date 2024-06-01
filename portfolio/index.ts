@@ -1,4 +1,4 @@
-import express, { Express } from "express";
+import express, { Express, NextFunction } from "express";
 import dotenv from "dotenv";
 import path from "path";
 
@@ -12,14 +12,23 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 app.set("views", path.join(__dirname, "views/viewswpl"));
+app.set("views", path.join(__dirname, "views/viewsportfolio"));
 
 app.set("port", process.env.PORT ?? 3000);
 
-app.get("/", (req, res) => {
+app.use((req, res, next) => {
+    res.locals.contact = undefined;
+    next();
+});
 
-    res.render("portfolio", {
-       
-    })
+app.get("/", (req, res) => {
+    res.render("portfolio");
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact", {
+        contact: true
+    });
 });
 
 app.listen(app.get("port"), () => {

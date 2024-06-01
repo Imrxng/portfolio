@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="NL-be">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/portfolio.webp"
+      type="image/x-icon"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssportfolio/reset.css" />
+    <link rel="stylesheet" href="./cssportfolio/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d59bc2ea1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <% if (contact) { %>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var map = L.map("map", { scrollWheelZoom: false }).setView(
+          [51.222836, 4.458097],
+          17
+        );
+
+        var CartoDB_Positron = L.tileLayer(
+          "https://{s}.basemaps.cartocdn.com/light_all/%7Bz%7D/%7Bx%7D/%7By%7D%7Br%7D.png",
+          {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: "abcd",
+            maxZoom: 20,
+          }
+        ).addTo(map);
+
+        var greenIcon = L.icon({
+          iconUrl: "./assets/icons/location-dot-solid.svg",
+
+          iconSize: [35, 35],
+          iconAnchor: [22, 94],
+          popupAnchor: [-3, -76],
+        });
+
+        L.marker([51.222836, 4.458097], { icon: greenIcon }).addTo(map);
+      });
+    </script>
+    <% }; %>
+  </head>
+  <body>
+    <header id="#top">
+      <p>Imran <span>Ghaddoura</span></p>
+      <nav>
+        <a href="/#aboutme">Over</a>
+        <a href="/#myservices">Mijn Services</a>
+        <a href="/#myskills">Mijn Skills</a>
+        <a href="/#mywork">Mijn Werk</a>
+        <a href="/contact">Contacteer Me</a>
+      </nav>
+      <section>
+        <img src="./assets/icons/english.webp" alt="englishflag" />
+        <img src="./assets/icons/dutch.webp" alt="dutchflag" />
+      </section>
+    </header>
+  </body>
+</html>

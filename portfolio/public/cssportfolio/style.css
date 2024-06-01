@@ -5,12 +5,12 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background-color:  var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: var(--detail-color); 
-  border-radius: 10px; 
+  background-color: var(--detail-color);
+  border-radius: 10px;
 }
 
 :root {
@@ -43,11 +43,14 @@ body {
 
 header {
   grid-area: header;
-  height: 5rem;
+  height: 6rem;
   padding: 1rem 4rem 1rem 4rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--primary-color);
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 nav {
@@ -61,12 +64,15 @@ footer {
   display: flex;
   justify-content: right;
   align-items: center;
-  padding-right: 4rem;
   gap: 17rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
+  height: 8rem;
 }
 
 h1 {
   font-size: xx-large;
+  font-weight: bolder;
 }
 i {
   color: var(--detail-color);
@@ -86,6 +92,12 @@ input[type="text"] {
 label {
   margin: 10px 0 10px 0;
 }
+textarea {
+  background-color: var(--font-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  padding: 1rem;
+}
 .fa-angles-up {
   border: var(--detail-color) 1px solid;
   padding: 10px;
@@ -100,7 +112,7 @@ label {
 }
 
 .fa-download {
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 .fa-paper-plane {
   color: var(--detail-color);
@@ -154,14 +166,26 @@ label {
   font-size: xx-large;
 }
 
+.Button {
+  padding: 1rem 5rem 1rem 5rem;
+  background-color: var(--detail-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+}
+
+.contactemoj {
+  margin-top: 5rem;
+}
+
 #intro {
   grid-area: intro;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 33rem;
+  height: 36rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
-
 
 #intro > article > div {
   display: flex;
@@ -173,9 +197,11 @@ label {
   grid-area: aboutme;
   background-color: var(--secondary-color);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 30rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 #aboutmetext {
@@ -195,22 +221,25 @@ label {
   justify-content: center;
   height: 25rem;
   gap: 5rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 #myservicesdivs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 #myskills {
   grid-area: myskills;
-  background-color: var(--secondary-color);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 4rem;
   align-items: center;
   height: 30rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 #allSkills {
@@ -223,18 +252,21 @@ label {
 
 #mywork {
   grid-area: mywork;
-  height: 30rem;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  padding: 5rem 20rem 5rem 20rem;
+
 }
 
 #mywork > article {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #contactme {
@@ -244,8 +276,10 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 55rem;
+  height: 25rem;
   gap: 5rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
 }
 
 #contactme > h1 {
@@ -254,10 +288,11 @@ label {
 
 #contactme > article {
   display: flex;
-  gap: 24rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
-#contactme > article > div {
+#contactme > article > div, .contactemoj {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,7 +301,14 @@ label {
 }
 
 #mezelf {
-  border-radius: 25%;
+  background-color: var(--detail-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  box-shadow: -1px 0px 58px -2px var(--detail-color);
 }
 
 #namefooter {
@@ -277,17 +319,9 @@ label {
   font-size: x-large;
 }
 
-
-#downloadButton  {
-  padding: 1rem 5rem 1rem 5rem;
-  background-color: var(--detail-color);
-  border-radius: 10px;
-  color: var(--primary-color);
-}
-
 #talkButton {
   padding: 1rem 3.5rem 1rem 3.5rem;
-  border:  1px solid var(--detail-color);
+  border: 1px solid var(--detail-color);
   border-radius: 10px;
   color: var(--detail-color);
 }
@@ -295,12 +329,42 @@ label {
 #contactForm {
   display: flex;
   flex-direction: column;
-  margin-left: 10rem;
-  margin-bottom: 3rem;
+  width: 30%;
 }
-textarea {
-  background-color: var(--font-color);
-  border-radius: 10px;
+
+#submitButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 13rem;
   color: var(--primary-color);
-  padding: 1rem;
+  font-weight: bolder;
+}
+
+#maincontact {
+  background-color: var(--secondary-color);
+  padding: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+#maincontact  > h1{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#maincontact > section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+#map {
+  height: 450px;
+  width: 30%;
+  border-radius: 10px;
+  border: var(--primary-color) 20px solid;
 }
