@@ -3,7 +3,7 @@ dotenv.config();
 
 import session from "express-session";
 import mongoDbSession from "connect-mongodb-session";
-import { Language } from "../types";
+import { Language, Message } from "../types";
 const MongoDBStore = mongoDbSession(session);
 
 const mongoStore = new MongoDBStore({
@@ -20,6 +20,8 @@ declare module 'express-session' {
     export interface SessionData {
         username?: string;
         language?: Language;
+        message?: string;
+        post: Message;
     }
 }
 

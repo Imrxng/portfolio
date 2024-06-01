@@ -390,6 +390,12 @@ figcaption {
   width: 30%;
 }
 
+#message {
+  margin-top: 2rem;
+  color: rgb(153, 0, 0);
+  font-weight: bolder;
+}
+
 #submitButton {
   display: flex;
   flex-direction: row;

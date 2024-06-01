@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import path from "path";
 import portfolioRouter from "./routers/portfolio";
 import session from "./middleware/session";
+import { connect } from "./databasePortfolio";
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.set("port", process.env.PORT);
 app.use(session);
 app.use((req, res, next) => {
     res.locals.contact = undefined;
+    res.locals.message = undefined;
     next();
 });
 app.use(session);
@@ -28,6 +30,7 @@ app.use("/", portfolioRouter());
 
 
 
-app.listen(app.get("port"), () => {
+app.listen(app.get("port"), async () => {
+    await connect();
     console.log("Server started on http://localhost:" + app.get("port"));
 });
