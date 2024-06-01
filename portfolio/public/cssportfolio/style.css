@@ -30,6 +30,7 @@ body {
   color: var(--font-color);
   font-family: "Open Sans", sans-serif;
   background-color: var(--primary-color);
+  overflow-x: hidden;
   grid-template-areas:
     "header"
     "intro"
