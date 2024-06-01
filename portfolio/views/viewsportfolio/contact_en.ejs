@@ -1,0 +1,22 @@
+<%- include("partials/header_en") %>
+    <main id="maincontact">
+        <h1>Contact <span>Me</span></h1>
+        <section>
+            <form action="/" method="post" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Mail:</label>
+                <input type="text" name="email" id="email">
+                <label for="vraag">Question:</label>
+                <textarea name="vraag" id="vraag" cols="30" rows="10"></textarea><br>
+                <button class="Button" id="submitButton">Deliver     <i class="fa-regular fa-paper-plane" id="submitButton"></i></button>
+            </form>
+            <div id="map"></div>
+        </section>
+        <section>
+            <div class="contactemoj"><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
+            <div class="contactemoj"><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
+            <div class="contactemoj"><i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+32489699900">+32489699900</a></div>
+        </section>
+    </main>
+<%- include("partials/footer_en") %>
