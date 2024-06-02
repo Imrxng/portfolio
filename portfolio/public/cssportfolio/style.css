@@ -92,17 +92,16 @@ h2 {
 li {
   list-style: inside;
   font-size: 15px;
-  text-indent: -20px; 
-  margin-left: 20px; 
+  text-indent: -20px;
+  margin-left: 20px;
 }
 ul {
-  padding-left: 20px; 
-  list-style-position: inside; 
+  padding-left: 20px;
+  list-style-position: inside;
 }
 
 li::marker {
   color: var(--detail-color);
-
 }
 
 i {
@@ -113,7 +112,8 @@ span {
   color: var(--detail-color);
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
   background-color: var(--font-color);
   color: var(--primary-color);
   padding: 5px;
@@ -153,7 +153,6 @@ figcaption {
   font-size: xx-large;
 }
 
-
 .fa-download {
   color: var(--primary-color);
 }
@@ -176,6 +175,13 @@ figcaption {
 
 .skillsVierkant {
   border-radius: 20px;
+}
+
+.messages {
+  background-color: var(--primary-color);
+  height: 10rem;
+  min-width: 13rem;
+  padding: 2rem;
 }
 
 .myworkfigure1 {
@@ -234,7 +240,7 @@ figcaption {
 }
 
 .bigicons {
-  font-size: 5rem
+  font-size: 5rem;
 }
 
 .contactemoj {
@@ -292,6 +298,7 @@ figcaption {
 #myservicesdivs {
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
   width: 100%;
 }
 
@@ -323,7 +330,6 @@ figcaption {
   justify-content: center;
   gap: 5rem;
   padding: 5rem 20rem 5rem 20rem;
-
 }
 
 #mywork > article {
@@ -361,7 +367,8 @@ figcaption {
   width: 100%;
 }
 
-#contactme > article > div, .contactemoj {
+#contactme > article > div,
+.contactemoj {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +432,7 @@ figcaption {
   padding-right: 20rem;
 }
 
-#maincontact  > h1{
+#maincontact > h1 {
   text-align: center;
   margin-bottom: 5rem;
 }
@@ -447,4 +454,58 @@ figcaption {
 #socials {
   display: flex;
   gap: 1rem;
+}
+
+#mainMessages {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center; 
+  gap: 3rem;
+  height: 75vh; 
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 1700px) {
+  header,
+  footer,
+  #intro,
+  #aboutme,
+  #myservices,
+  #myskills,
+  #mywork,
+  #contactme {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header,
+  footer,
+  #intro,
+  #aboutme,
+  #myservices,
+  #myskills,
+  #mywork,
+  #contactme {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+
+@media only screen and (max-width: 100px) {
+  header,
+  footer,
+  #intro,
+  #aboutme,
+  #myservices,
+  #myskills,
+  #mywork,
+  #contactme {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }

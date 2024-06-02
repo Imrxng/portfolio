@@ -93,7 +93,7 @@ async function user() {
     if (await collectionUser.countDocuments() != 1) {
         await collectionUser.insertOne({
             username: "imranx",
-            password: await bcrypt.hash("Incredibilysecretlypass33194", saltRounds)
+            password: await bcrypt.hash(process.env.ADMINPS!, saltRounds)
         });
     };
 };
@@ -112,7 +112,11 @@ export async function login(user: User) {
         return true;
     };
     return false;
-}
+};
+
+export async function getMessages() {
+    return await collectionMessages.find({}).toArray();  
+};
 
 async function exit() {
 try {

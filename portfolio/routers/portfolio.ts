@@ -1,6 +1,7 @@
 import express, { Express } from "express";
-import { insertMessage, login, voegBericht } from "../databasePortfolio";
+import { getMessages, insertMessage, login, voegBericht } from "../databasePortfolio";
 import { requireLogin } from "../middleware/middleware";
+import { Message } from "../types";
 
 
 
@@ -91,8 +92,11 @@ export default function portfolioRouter() {
         res.redirect("/")
      });
 
-     router.get("/messages", requireLogin, (req, res) => {
-        res.render("messages");
+     router.get("/messages", requireLogin, async (req, res) => {
+        const messages: Message[] = await getMessages();
+        res.render("messages", {
+            messages: messages
+        });
      });
 
     return router;

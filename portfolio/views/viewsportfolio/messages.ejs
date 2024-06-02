@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+    <main id="mainMessages">
+        <% if (messages) { %>
+            <% for (const message of messages) { %>
+                <section class="messages" >
+                    <p><span>Naam:</span> <%= message.name%> </p>
+                    <p><span>Mail:</span> <%= message.mail%></p>
+                    <p><span>Bericht:</span> <%= message.text%></p>
+                </section>
+            <% }; %>
+        <% } else { %>
+            <span>Er zijn geen berichten op het moment.</span>
+        <% }; %>
+    </main>
+    <%- include("partials/footer") %>
