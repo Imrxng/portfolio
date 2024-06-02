@@ -1,12 +1,12 @@
 export type Language = "en" | "nl";
 
 export interface Message {
-    text: string;
-    mail: string;
-    name: string;
+  text: string;
+  mail: string;
+  name: string;
 }
 
 export interface User {
-    username: string;
-    password: string;
+  username: string;
+  password: string;
 }

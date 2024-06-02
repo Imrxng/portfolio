@@ -1,14 +1,19 @@
 <%- include("partials/header") %>
-    <main style="display: flex; padding: 6rem; justify-content: center; align-items: center; background-color: #848c8e; ">
-        <form action="/login" method="post" id="contactForm">
-            <label for="username">Username: </label>
-            <input type="text" name="username" id="username">
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-            <input class="Button" type="submit" value="Login" style="margin-top: 2rem; width: 20%;">
-        </form>
-        <section>
-            <img src="./assets/images/duim.webp" alt="duim">
-        </section>
-    </main>
+<main id="mainLogin">
+  <form action="/login" method="post" id="contactForm">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" />
+    <input
+      class="Button"
+      type="submit"
+      value="Login"
+      style="margin-top: 2rem; width: 20%"
+    />
+  </form>
+  <section>
+    <img src="./assets/images/duim.webp" alt="duim" />
+  </section>
+</main>
 <%- include("partials/footer") %>
