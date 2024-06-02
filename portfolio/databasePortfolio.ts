@@ -2,7 +2,7 @@ import { MongoClient, Collection, WithId, ObjectId } from "mongodb";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 import { error, log } from "console";
-import { Message } from "./types";
+import { Message, User } from "./types";
 
 dotenv.config();
 const uri: string = process.env.MONGODB_URI!;
@@ -11,7 +11,11 @@ const collectionMessages: Collection<Message> = client
   .db("portfolio")
   .collection<Message>("Messages");
 
+const collectionUser: Collection<User> = client
+.db("portfolio")
+.collection<User>("User");
 
+const saltRounds: number = 10;
 
 export async function voegBericht(message: Message) {
     if (!message.name || message.name === "") {
@@ -85,6 +89,31 @@ export async function insertMessage(message: Message) {
     await collectionMessages.insertOne(message)
 };
 
+async function user() {
+    if (await collectionUser.countDocuments() != 1) {
+        await collectionUser.insertOne({
+            username: "imranx",
+            password: await bcrypt.hash("Incredibilysecretlypass33194", saltRounds)
+        });
+    };
+};
+
+export async function login(user: User) {
+    const databaseUser: WithId<User> | null = await collectionUser.findOne({username: user.username});
+    
+    if (!user.username || !user.password) {        
+        return false;
+    };
+   
+    
+    if (await bcrypt.compare(user.password, databaseUser!.password)) {
+        console.log(true);
+        
+        return true;
+    };
+    return false;
+}
+
 async function exit() {
 try {
     await client.close();
@@ -99,6 +128,7 @@ try {
 export async function connect() {
 try {
     await client.connect();
+    await user();
     console.log("Connected to database");
     process.on("SIGINT", exit);
 } catch (error: any) {

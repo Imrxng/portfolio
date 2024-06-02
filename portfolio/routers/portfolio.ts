@@ -1,5 +1,6 @@
 import express, { Express } from "express";
-import { insertMessage, voegBericht } from "../databasePortfolio";
+import { insertMessage, login, voegBericht } from "../databasePortfolio";
+import { requireLogin } from "../middleware/middleware";
 
 
 
@@ -70,8 +71,29 @@ export default function portfolioRouter() {
     });
     
     router.get("/login", (req, res) => {
-       
+       res.render("login");
     });
+    
+    router.post("/login", async (req, res) => {
+        const succes: boolean = await login(req.body);
+        if (succes) {
+            req.session.username = req.body.username;
+            res.redirect("/messages");
+        } else {
+            res.redirect("back");
+        };
+     });
+
+     router.get("/logout", (req, res) => {
+        req.session.destroy(() => {
+            console.log("Succesvol uitgelogd"); 
+        });
+        res.redirect("/")
+     });
+
+     router.get("/messages", requireLogin, (req, res) => {
+        res.render("messages");
+     });
 
     return router;
 }

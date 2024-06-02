@@ -113,7 +113,7 @@ span {
   color: var(--detail-color);
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   background-color: var(--font-color);
   color: var(--primary-color);
   padding: 5px;

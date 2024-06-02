@@ -5,3 +5,8 @@ export interface Message {
     mail: string;
     name: string;
 }
+
+export interface User {
+    username: string;
+    password: string;
+}
