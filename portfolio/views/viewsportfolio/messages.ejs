@@ -1,6 +1,6 @@
 <%- include("partials/header") %>
     <main id="mainMessages">
-        <% if (messages) { %>
+        <% if (messages.length > 0) { %>
             <% for (const message of messages) { %>
                 <section class="messages" >
                     <p><span>Naam:</span> <%= message.name%> </p>

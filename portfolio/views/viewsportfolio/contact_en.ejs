@@ -1,7 +1,7 @@
 <%- include("partials/header") %>
     <main id="maincontact">
         <h1>Contact <span>Me</span></h1>
-        <section>
+        <section id="formAndMap">
             <form action="/" method="post" id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" value="<% if (post) { %><%= post.name %><% } %>">
@@ -16,7 +16,7 @@
         <% if (message) { %>
             <p id="message" <% if (message === "Your message has been successfully sent." || message === "Uw bericht is succesvol verzonden.") { %> style="color: #dcf763" <%} %>><%= message %></p>
         <% }; %>
-        <section>
+        <section id="contactmeContactPage">
             <div class="contactemoj"><i class="fa-regular fa-envelope"></i><a href="mailto:imran.ghaddoura@student.ap.be">imran.ghaddoura@student.ap.be</a></div>
             <div class="contactemoj"><i class="fa-solid fa-location-dot"></i><p>Belgium - Antwerp</p></div>
             <div class="contactemoj"><i class="fa-solid fa-mobile-screen-button"></i><a href="tel:+32489699900">+32489699900</a></div>

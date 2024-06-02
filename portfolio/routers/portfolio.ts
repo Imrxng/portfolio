@@ -93,7 +93,7 @@ export default function portfolioRouter() {
      });
 
      router.get("/messages", requireLogin, async (req, res) => {
-        const messages: Message[] = await getMessages();
+        const messages: Message[] | undefined = await getMessages();
         res.render("messages", {
             messages: messages
         });
