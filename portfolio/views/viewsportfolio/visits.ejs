@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+    <main id="mainMessages">
+        <% if (visits.length > 0) { %>
+            <% for (const visit of visits) { %>
+                <section class="messages" >
+                    <p><span>IP:</span> <%= visit.ip%> </p>
+                    <p><span>Datum:</span> 
+                        <%= ('0' + visit.date.getDate()).slice(-2) %>/
+                        <%= ('0' + (visit.date.getMonth() + 1)).slice(-2) %>/
+                        <%= visit.date.getFullYear() %> 
+                        <%= ('0' + visit.date.getHours()).slice(-2) %>:<%= ('0' + visit.date.getMinutes()).slice(-2) %>
+                      </p>
+                </section>
+            <% }; %>
+        <% } else { %>
+            <span>Er zijn geen berichten op het moment.</span>
+        <% }; %>
+    </main>
+    <%- include("partials/footer") %>

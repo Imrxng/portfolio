@@ -1,8 +1,7 @@
 import { MongoClient, Collection, WithId, ObjectId } from "mongodb";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
-import { error, log } from "console";
-import { Message, User } from "./types";
+import { Message, User, Visit } from "./types";
 
 dotenv.config();
 const uri: string = process.env.MONGODB_URI!;
@@ -14,6 +13,10 @@ const collectionMessages: Collection<Message> = client
 const collectionUser: Collection<User> = client
   .db("portfolio")
   .collection<User>("User");
+
+const collectionVisits: Collection<Visit> = client
+.db("portfolio")
+.collection<Visit>("Visits");
 
 const saltRounds: number = 10;
 
@@ -151,6 +154,14 @@ export async function login(user: User) {
 
 export async function getMessages() {
   return await collectionMessages.find({}).toArray();
+}
+export async function addUser(visit: Visit) {
+  await collectionVisits.insertOne(visit);
+}
+
+
+export async function getVisits() {
+  return await collectionVisits.find({}).toArray();
 }
 
 async function exit() {

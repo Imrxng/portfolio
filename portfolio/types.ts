@@ -10,3 +10,8 @@ export interface User {
   username: string;
   password: string;
 }
+
+export interface Visit {
+  date: Date;
+  ip: string | undefined;
+}
