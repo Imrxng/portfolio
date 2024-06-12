@@ -31,7 +31,7 @@ export default session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        maxAge: 60 * 60 * 24 * 365,
+        expires: new Date(Date.now() + 60 * 60 * 24 * 7 * 365),
         httpOnly: true,
         sameSite: "lax"
     }
