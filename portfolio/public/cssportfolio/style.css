@@ -239,7 +239,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;   
   min-height: 36rem;
   padding-right: 20rem;
   padding-left: 20rem;
