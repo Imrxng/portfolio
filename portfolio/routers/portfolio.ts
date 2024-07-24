@@ -1,12 +1,10 @@
 import express, { Express } from "express";
 import {
-  addUser,
   getMessages,
-  getVisits,
   insertMessage,
   login,
   voegBericht,
-} from "../databasePortfolio";
+} from "../database";
 import { requireLogin } from "../middleware/middleware";
 import { Message, Visit } from "../types";
 
@@ -16,10 +14,6 @@ export default function portfolioRouter() {
 
   router.get("/", async (req, res) => {
     req.session.message = undefined;
-    await addUser({
-      ip: req.ip,
-      date: new Date()
-    });
     if (!req.session.language) {
       req.session.language = "nl";
     }
@@ -104,13 +98,6 @@ export default function portfolioRouter() {
     const messages: Message[] | undefined = await getMessages();
     res.render("messages", {
       messages: messages,
-    });
-  });
-
-  router.get("/visits", requireLogin, async (req, res) => {
-    const visits: Visit[] | undefined = await getVisits();
-    res.render("visits", {
-      visits: visits
     });
   });
 

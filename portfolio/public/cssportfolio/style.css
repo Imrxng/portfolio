@@ -584,6 +584,10 @@ figcaption {
     width: 60%;
   }
 
+  #aboutmetext {
+    width: 100%;
+  }
+
   #talkButton,
   .Button {
     display: flex;

@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import path from "path";
 import portfolioRouter from "./routers/portfolio";
 import session from "./middleware/session";
-import { connect } from "./databasePortfolio";
+import { connect } from "./database";
 
 dotenv.config();
 
