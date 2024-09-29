@@ -12,10 +12,10 @@ const Portfolio = () => {
                 <a href="">Contact</a>
                 </nav>
                 <section>
-                <a href="/"
+                <a href=""
                     ><img src="./assets/icons/english.webp" alt="englishflag"
                 /></a>
-                <a href="/"
+                <a href=""
                     ><img src="./assets/icons/dutch.webp" alt="dutchflag"
                 /></a>
                 </section>
