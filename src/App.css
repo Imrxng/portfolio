@@ -165,6 +165,10 @@ figcaption {
   border-radius: 20px;
 }
 
+.skillsBig {
+  padding: 4px;
+}
+
 .messages {
   background-color: var(--primary-color);
   height: 10rem;
@@ -177,15 +181,15 @@ figcaption {
 }
 
 .myworkfigure2 {
-  background: url("./assets/images/fitimproving.webp");
+  background: url("/assets/images/fitimproving.webp");
 }
 
 .myworkfigure3 {
-  background: url("./assets/images/library.webp");
+  background: url("/assets/images/library.webp");
 }
 
 .myworkfigure4 {
-  background: url("./assets/images/mtg.webp");
+  background: url("/assets/images/mtg.webp");
 }
 
 .myworkfigure {
