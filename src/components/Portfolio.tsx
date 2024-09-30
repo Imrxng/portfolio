@@ -98,26 +98,27 @@ const Portfolio = () => {
                                 <img src="./assets/icons/css.webp" alt="css" className="skillsIcons"/>
                             </div>
                             <div className="skills">
-                                <img src="./assets/icons/csharp.webp" alt="csharp" className="skillsIcons"/>
-                            </div>
-                            <div className="skills">
-                                <img src="./assets/icons/mongo.webp" alt="mongo" className="skillsIcons"/>
-                            </div>
-                            <div className="skills">
-                                <img src="./assets/icons/sql.webp" alt="sql" className="skillsIcons"/>
-                            </div>
-                            <div className="skills">
                                 <img src="./assets/icons/icon-react.webp" alt="react" className="skillsIcons"/>
                             </div>
                             <div className="skills">
                                 <img src="./assets/icons/react-native.webp" alt="react" className="skillsIcons"/>
                             </div>
                             <div className="skills">
+                                <img src="./assets/icons/next.js.webp" alt="next" className="skillsIcons skillsBig"/>
+                            </div>
+                            <div className="skills">
+                                <img src="./assets/icons/mongo.webp" alt="mongo" className="skillsIcons"/>
+                            </div>
+                            <div className="skills">
+                                <img src="./assets/icons/csharp.webp" alt="csharp" className="skillsIcons"/>
+                            </div>
+                            <div className="skills">
                                 <img src="./assets/icons/icon-api.webp" alt="api" className="skillsIcons skillsBig"/>
                             </div>
                             <div className="skills">
-                                <img src="./assets/icons/next.js.webp" alt="next" className="skillsIcons skillsBig"/>
+                                <img src="./assets/icons/sql.webp" alt="sql" className="skillsIcons"/>
                             </div>
+                            
                         </div>
                     </article>
                 </section>
