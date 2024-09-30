@@ -110,6 +110,9 @@ const Portfolio = () => {
                                 <img src="./assets/icons/icon-react.webp" alt="react" className="skillsIcons"/>
                             </div>
                             <div className="skills">
+                                <img src="./assets/icons/react-native.webp" alt="react" className="skillsIcons"/>
+                            </div>
+                            <div className="skills">
                                 <img src="./assets/icons/icon-api.webp" alt="api" className="skillsIcons skillsBig"/>
                             </div>
                             <div className="skills">
