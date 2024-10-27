@@ -8,11 +8,15 @@ interface LanguageIconProps {
 const LANGUAGE_ICON = ({ language } : LanguageIconProps) => {
 
     const { LANGUAGE, SETLANGUAGE} = useContext(DataContext);
-
+        console.log(language);
+        console.log(LANGUAGE);
     const HandleClick: React.MouseEventHandler<HTMLImageElement> = () => {
-        if (LANGUAGE === "nl" && language != "dutch") {
+        
+        
+        
+        if (LANGUAGE === "nl" && language === "en") {
             SETLANGUAGE("en");
-        } else if (LANGUAGE === "en" && language != "english") {
+        }  if (LANGUAGE === "en" && language === "nl") {
             SETLANGUAGE("nl");
         }
     };
