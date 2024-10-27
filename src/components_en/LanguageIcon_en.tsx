@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
-import { circleMarker } from "leaflet";
 
 interface LanguageIconProps {
     language: string
