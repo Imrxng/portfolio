@@ -12,7 +12,7 @@ const INTRO_EN = () => {
       <p className="infoTekst2">I'm a Full Stack Developer</p>
                 <div id="Cv_Message">
                     <a href="./download/CV_Imran_Ghaddoura.pdf" className="Button" download="CV_Imran_Ghaddoura.pdf">CV <i className="fa-solid fa-download"></i></a>
-                    <Link to={"/contact"} id="talkButton">Let's talk  <i className="fa-regular fa-paper-plane"></i></Link>
+                    <Link to={"/portfolio/contact"} id="talkButton">Let's talk  <i className="fa-regular fa-paper-plane"></i></Link>
                 </div>
             </div>
             <div id="mezelf">
