@@ -72,17 +72,20 @@ h1 {
   font-size: xx-large;
   font-weight: bolder;
 }
+
 h2 {
   font-size: larger;
   font-weight: 500;
   text-align: center;
 }
+
 li {
   list-style: inside;
   font-size: 15px;
   text-indent: -20px;
   margin-left: 20px;
 }
+
 ul {
   padding-left: 20px;
   list-style-position: inside;
@@ -111,6 +114,7 @@ input[type="password"] {
 label {
   margin: 10px 0 10px 0;
 }
+
 textarea {
   background-color: var(--font-color);
   border-radius: 10px;
@@ -123,6 +127,7 @@ figcaption {
   font-weight: bolder;
   font-size: large;
 }
+
 .fa-angles-up {
   border: var(--detail-color) 1px solid;
   padding: 10px;
@@ -144,9 +149,11 @@ figcaption {
 .fa-download {
   color: var(--primary-color);
 }
+
 .fa-paper-plane {
   color: var(--detail-color);
 }
+
 .skills {
   width: 48px;
   height: 48px;
@@ -156,6 +163,7 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
+
 .skillsIcons {
   width: 38px;
   height: 38px;
@@ -239,17 +247,26 @@ figcaption {
   margin-top: 5rem;
 }
 
+.contactInfoElement,
+.contactemoj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
 #intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   min-height: 36rem;
   padding-right: 20rem;
   padding-left: 20rem;
 }
 
-#intro > article > div {
+#Cv_Message {
   display: flex;
   gap: 2rem;
   padding-top: 2rem;
@@ -321,7 +338,7 @@ figcaption {
   padding: 5rem 20rem 5rem 20rem;
 }
 
-#mywork > article {
+#allProjects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -349,19 +366,10 @@ figcaption {
   font-size: large;
 }
 
-#contactme > article {
+#contactInfo {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-#contactme > article > div,
-.contactemoj {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
 }
 
 #mezelf {
@@ -558,7 +566,7 @@ figcaption {
     width: 15rem;
   }
 
-  #mywork > article {
+  #allProjects {
     justify-content: center;
   }
 
@@ -571,7 +579,7 @@ figcaption {
     gap: 3rem;
   }
 
-  #contactme > article {
+  #contactInfo {
     flex-direction: column;
     gap: 2rem;
   }
@@ -583,7 +591,7 @@ figcaption {
 }
 
 @media only screen and (max-width: 600px) {
-  #intro > article > div {
+  #Cv_Message {
     flex-direction: column;
     width: 60%;
   }
@@ -639,4 +647,4 @@ figcaption {
   #talkButton {
     padding: 1rem;
   }
-}   
+}

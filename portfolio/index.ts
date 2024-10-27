@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views/viewsportfolio"));
-app.set("port", process.env.PORT);
+  app.set("port", process.env.PORT);
 app.use(session);
 app.use((req, res, next) => {
   res.locals.contact = undefined;
