@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import './App.css'
 import PORTFOLIO from './pages/Portfolio'
-import { DataContext, DataProvider } from './context/DataContext'
+import { DataContext } from './context/DataContext'
 import HEADER from './components/partials/Header'
 import FOOTER from './components/partials/Footer'
 import NOT_FOUND from './components/NotFound'
