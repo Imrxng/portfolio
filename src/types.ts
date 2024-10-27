@@ -21,4 +21,6 @@ export interface IDataContext {
     SERVICEBOXES: IServicesBoxes;
     SKILLS: string[];
     PROJECTS: Project[];
+    LANGUAGE: string;
+    SETLANGUAGE: React.Dispatch<React.SetStateAction<string>>;
 };

@@ -1,4 +1,4 @@
-import SERVICES_DIVS from "./ServicesDivs";
+import SERVICES_DIVS from "./ServicesDivs_en";
 
 
 const MY_SERVICES = () => {
@@ -7,7 +7,7 @@ const MY_SERVICES = () => {
     return (
         <div id="myservices">
             <div>
-                <h1>Mijn <span>Diensten</span></h1>
+                <h1>My <span>Services</span></h1>
             </div>
             <SERVICES_DIVS/>
         </div>

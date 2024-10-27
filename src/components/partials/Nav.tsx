@@ -1,16 +1,13 @@
-
+import { HashLink } from "react-router-hash-link"; 
 
 const NAV = () => {
-
-
     return (
         <nav>
-            //WHen nav to change css for a tag
-            <a href="#aboutme">Over</a>
-            <a href="#myservices">Diensten</a>
-            <a href="#myskills">Skills</a>
-            <a href="#mywork">Projecten</a>
-            <a href="">Contact</a>
+            <HashLink to="/portfolio/#aboutme">Over</HashLink>
+            <HashLink to="/portfolio/#myservices">Diensten</HashLink>
+            <HashLink to="/portfolio/#myskills">Skills</HashLink>
+            <HashLink to="/portfolio/#mywork">Projecten</HashLink>
+            <HashLink to="/portfolio/contact">Contact</HashLink>
         </nav>
     );
 };
