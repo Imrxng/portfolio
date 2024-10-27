@@ -556,7 +556,7 @@ figcaption {
     flex-direction: column;
   }
 
-  #map {
+  .leaflet-container {
     width: 30rem;
   }
 }
@@ -636,13 +636,13 @@ figcaption {
     max-height: 25rem;
   }
 
-  #map {
+  .leaflet-container {
     width: 25rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  #map {
+  .leaflet-container {
     width: 20rem;
   }
 
@@ -653,7 +653,7 @@ figcaption {
 }
 
 @media only screen and (max-width: 400px) {
-  #map {
+  .leaflet-container {
     width: 20rem;
   }
 
