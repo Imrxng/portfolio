@@ -1,23 +1,29 @@
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
+
 const CONTACT_INFO = () => {
-    return (
-        <div id="contactmeContactPage">
-        <div className="contactemoj">
-          <i className="fa-regular fa-envelope"></i>
-          <a href="mailto:imran.ghaddoura@student.ap.be">
-            imran.ghaddoura@student.ap.be
-          </a>
-        </div>
-        <div className="contactemoj">
-          <i className="fa-solid fa-location-dot"></i>
-          <p>België - Antwerpen</p>
-        </div>
-        <div className="contactemoj">
-          <i className="fa-solid fa-mobile-screen-button"></i>
-          <a href="tel:+32485155865">+32485155865</a>
-        </div>
+  const { LANGUAGE } = useContext(DataContext);
+  return (
+    <div id="contactmeContactPage">
+      <div className="contactemoj">
+        <i className="fa-regular fa-envelope"></i>
+        <a href="mailto:imran.ghaddoura@student.ap.be">
+          imran.ghaddoura@student.ap.be
+        </a>
       </div>
-    );
-  };
-  
-  export default CONTACT_INFO;
-  
+      <div className="contactemoj">
+        <i className="fa-solid fa-location-dot"></i>
+        {LANGUAGE === 'nl' ?
+          <p>België - Antwerpen</p> :
+          <p>Belgium - Antwerp</p> 
+        }
+      </div>
+      <div className="contactemoj">
+        <i className="fa-solid fa-mobile-screen-button"></i>
+        <a href="tel:+32485155865">+32485155865</a>
+      </div>
+    </div>
+  );
+}
+
+export default CONTACT_INFO;

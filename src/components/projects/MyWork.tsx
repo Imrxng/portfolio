@@ -5,20 +5,28 @@ import ONE_PROJECT from "./OneProject";
 
 const MY_WORK = () => {
 
-    const { PROJECTS } = useContext(DataContext);
-    
-    
+    const { PROJECTS, LANGUAGE } = useContext(DataContext);
+
+
     return (
         <>
             <div id="mywork">
-                <h1>Mijn <span>Projecten</span></h1>
+                {LANGUAGE === 'nl' ?
+                    <h1>Mijn <span>Projecten</span></h1>
+                    :
+                    <h1>My <span>Projects</span></h1>
+                }
                 <div id="allProjects">
-                    {PROJECTS.map((project, index) => <ONE_PROJECT project={project} index={index} key={index}/>)}
+                    {PROJECTS.map((project, index) => <ONE_PROJECT project={project} index={index} key={index} />)}
                 </div>
             </div>
-            <p style={{padding: "10px", fontSize: "small"}}><span>* </span>Er kan een vertraging plaatsvinden bij bezoek website.</p>
+            {LANGUAGE === 'nl' ?
+                <p style={{ padding: "10px", fontSize: "small" }}><span>* </span>Er kan een vertraging plaatsvinden bij bezoek website.</p>
+                :
+                <p style={{ padding: "10px", fontSize: "small" }}><span>* </span>There may be a delay when visiting the website.</p>
+            }
         </>
-            
+
     );
 };
 

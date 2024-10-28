@@ -1,6 +1,8 @@
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
 const FOOTER = () => {
-
+    const { LANGUAGE } = useContext(DataContext);
 
     return (
         <footer>
@@ -9,8 +11,17 @@ const FOOTER = () => {
                 <a href="https://www.linkedin.com/in/imran-g-b1b778255" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
             </div>
             <div>
-                <p>&copy; 2024 Alle Rechten Voorbehouden.</p>
-                <p>Door <span>Imran Ghaddoura</span></p>
+                {LANGUAGE === 'nl' ?
+                    <>
+                        <p>&copy; 2024 Alle Rechten Voorbehouden.</p>
+                        <p>Door <span>Imran Ghaddoura</span></p>
+                    </>
+                    :
+                    <>
+                        <p>&copy; 2024 All Rights Reserved.</p>
+                        <p>By <span>Imran Ghaddoura</span></p>
+                    </>
+                }
             </div>
             <div>
                 <a href="#top"><i className="fa-solid fa-angles-up"></i></a>
