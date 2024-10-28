@@ -13,7 +13,7 @@ const CONTACT_INFO = () => {
         </div>
         <div className="contactemoj">
           <i className="fa-solid fa-mobile-screen-button"></i>
-          <a href="tel:+32489699900">+32489699900</a>
+          <a href="tel:+32485155865">+32485155865</a>
         </div>
       </div>
     );
