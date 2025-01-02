@@ -445,7 +445,7 @@ figcaption {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 13rem;
+  width: 100%;
   color: var(--primary-color);
   font-weight: bolder;
 }
