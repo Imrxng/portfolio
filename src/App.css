@@ -200,6 +200,22 @@ figcaption {
   background: url("/assets/images/mtg.webp");
 }
 
+.myworkfigure5 {
+  background: url("/assets/images/api.webp");
+}
+
+.myworkfigure6 {
+  background: url("/assets/images/avatar.webp");
+}
+
+.myworkfigure7 {
+  background: url("/assets/images/teach-me.webp");
+}
+
+.myworkfigure8 {
+  background: url("/assets/images/driving.webp");
+}
+
 .myworkfigure {
   width: 17rem;
   height: 11rem;

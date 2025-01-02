@@ -63,6 +63,22 @@ export const PROJECTS: Project[] = [
         link: 'https://wpl-project.onrender.com/projects',
         caption: 'Kaart spel (Express)'
     },
+    {
+        link: 'https://github.com/Imrxng/project_api_ontwikkeling',
+        caption: 'Project API (ASP.NET)'
+    },
+    {
+        link: 'https://drive.google.com/file/d/1vHg0Tu6Bp_BmW0OEjPGKmzarJten00ks/view?usp=sharing',
+        caption: 'Avatar (React Native)'
+    },
+    {
+        link: 'Teach-Me',
+        caption: 'Teach-Me (Grote project)'
+    },
+    {
+        link: 'https://rijschool.vercel.app/',
+        caption: 'Rijschool (Next.js)'
+    }
 ]
 
 
@@ -112,4 +128,20 @@ export const PROJECTS_EN: Project[] = [
         link: 'https://wpl-project.onrender.com/projects',
         caption: 'Card Game (Express)'
     },
+    {
+        link: 'https://github.com/Imrxng/project_api_ontwikkeling',
+        caption: 'Project API (ASP.NET)'
+    },
+    {
+        link: 'https://drive.google.com/file/d/1vHg0Tu6Bp_BmW0OEjPGKmzarJten00ks/view?usp=sharing',
+        caption: 'Avatar (React Native)'
+    },
+    {
+        link: 'Teach-Me',
+        caption: 'Teach-Me (Big project)'
+    },
+    {
+        link: 'https://rijschool.vercel.app/',
+        caption: 'Driving School (Next.js)'
+    }
 ]
