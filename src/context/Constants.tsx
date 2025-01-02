@@ -11,7 +11,10 @@ export const SKILLS: string[] = [
     "mongo",
     "csharp",
     "icon-api",
-    "sql"
+    "sql",
+    "s3",
+    "cy",
+    "testing"
 ]
 
 export const SERVICEBOXES: IServicesBoxes = {
