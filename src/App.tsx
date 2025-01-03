@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
 import './App.css'
 import PORTFOLIO from './pages/Portfolio'
 import HEADER from './components/partials/Header'
@@ -20,7 +20,7 @@ const ROOT = () => {
 
 function App() {
   
-  const ROUTER = createBrowserRouter([
+  const ROUTER = createHashRouter([
     {
       path: "/portfolio",
       element: <ROOT/>,
