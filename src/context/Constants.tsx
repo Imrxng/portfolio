@@ -72,11 +72,11 @@ export const PROJECTS: Project[] = [
         caption: 'Avatar (React Native)'
     },
     {
-        link: 'Teach-Me',
+        link: 'https://imrxng.github.io/teach-me-ui/#/login',
         caption: 'Teach-Me (Grote project)'
     },
     {
-        link: 'https://rijschool.vercel.app/',
+        link: 'https://www.alpha-rijschool.be/',
         caption: 'Rijschool (Next.js)'
     }
 ]
@@ -137,11 +137,11 @@ export const PROJECTS_EN: Project[] = [
         caption: 'Avatar (React Native)'
     },
     {
-        link: 'Teach-Me',
+        link: 'https://imrxng.github.io/teach-me-ui/#/login',
         caption: 'Teach-Me (Big project)'
     },
     {
-        link: 'https://rijschool.vercel.app/',
+        link: 'https://www.alpha-rijschool.be/',
         caption: 'Driving School (Next.js)'
     }
 ]
