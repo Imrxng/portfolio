@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
         caption: 'Avatar (React Native)'
     },
     {
-        link: 'https://imrxng.github.io/teach-me-ui/#/login',
+        link: 'https://teach-me-ui.vercel.app/#/login',
         caption: 'Teach-Me (Grote project)'
     },
     {
@@ -137,7 +137,7 @@ export const PROJECTS_EN: Project[] = [
         caption: 'Avatar (React Native)'
     },
     {
-        link: 'https://imrxng.github.io/teach-me-ui/#/login',
+        link: 'https://teach-me-ui.vercel.app/#/login',
         caption: 'Teach-Me (Big project)'
     },
     {
