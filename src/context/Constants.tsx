@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
         caption: 'Bibliotheek (C#)'
     },
     {
-        link: 'https://alternative-wylma-aphoge-86c5f663.koyeb.app/projects',
+        link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Kaart spel (Express)'
     },
     {
@@ -125,7 +125,7 @@ export const PROJECTS_EN: Project[] = [
         caption: 'Library (C#)'
     },
     {
-        link: 'https://alternative-wylma-aphoge-86c5f663.koyeb.app/projects',
+        link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Card Game (Express)'
     },
     {
