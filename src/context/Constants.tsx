@@ -48,7 +48,7 @@ export const SERVICEBOXES: IServicesBoxes = {
 export const PROJECTS: Project[] = [
     {
         link: 'https://teach-me-ui.vercel.app/#/login',
-        caption: 'Teach-Me (Grote project)'
+        caption: 'Teach-Me (Full stack)'
     },
     {
         link: 'https://www.alpha-rijschool.be/',
@@ -112,7 +112,7 @@ export const SERVICEBOXES_EN: IServicesBoxes = {
 export const PROJECTS_EN: Project[] = [
     {
         link: 'https://teach-me-ui.vercel.app/#/login',
-        caption: 'Teach-Me (Big project)'
+        caption: 'Teach-Me (Full stack)'
     },
     {
         link: 'https://www.alpha-rijschool.be/',
