@@ -185,35 +185,36 @@ figcaption {
 }
 
 .myworkfigure1 {
-  background: url("/assets/images/admin.webp");
+  background: url("/assets/images/brightest.webp");
+  background-position: center;
 }
 
 .myworkfigure2 {
-  background: url("/assets/images/fitimproving.webp");
-}
-
-.myworkfigure3 {
-  background: url("/assets/images/library.webp");
-}
-
-.myworkfigure4 {
-  background: url("/assets/images/mtg.webp");
-}
-
-.myworkfigure5 {
-  background: url("/assets/images/api.webp");
-}
-
-.myworkfigure6 {
-  background: url("/assets/images/avatar.webp");
-}
-
-.myworkfigure7 {
   background: url("/assets/images/teach-me.webp");
 }
 
-.myworkfigure8 {
+.myworkfigure3 {
   background: url("/assets/images/driving.webp");
+}
+
+.myworkfigure4 {
+  background: url("/assets/images/api.webp");
+}
+
+.myworkfigure5 {
+  background: url("/assets/images/avatar.webp");
+}
+
+.myworkfigure6 {
+  background: url("/assets/images/mtg.webp");
+}
+
+.myworkfigure7 {
+  background: url("/assets/images/admin.webp");
+}
+
+.myworkfigure8 {
+  background: url("/assets/images/library.webp");
 }
 
 .myworkfigure {
