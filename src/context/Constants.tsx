@@ -45,32 +45,7 @@ export const SERVICEBOXES: IServicesBoxes = {
     ]
 };
 
-
 export const PROJECTS: Project[] = [
-    {
-        link: 'https://adminui-jk6j.onrender.com/login',
-        caption: 'Admin UI (Express)'
-    },
-    {
-        link: 'https://imrxng.github.io/fitimproving/',
-        caption: 'Webshop (HTML & CSS)'
-    },
-    {
-        link: 'https://github.com/Imrxng/librarycsharp',
-        caption: 'Bibliotheek (C#)'
-    },
-    {
-        link: 'https://wpl-imran.koyeb.app/projects',
-        caption: 'Kaart spel (Express)'
-    },
-    {
-        link: 'https://github.com/Imrxng/project_api_ontwikkeling',
-        caption: 'Project API (ASP.NET)'
-    },
-    {
-        link: 'https://drive.google.com/file/d/1vHg0Tu6Bp_BmW0OEjPGKmzarJten00ks/view?usp=sharing',
-        caption: 'Avatar (React Native)'
-    },
     {
         link: 'https://teach-me-ui.vercel.app/#/login',
         caption: 'Teach-Me (Grote project)'
@@ -78,7 +53,30 @@ export const PROJECTS: Project[] = [
     {
         link: 'https://www.alpha-rijschool.be/',
         caption: 'Rijschool (Next.js)'
-    }
+    },
+    {
+        link: 'https://github.com/Imrxng/project_api_ontwikkeling',
+        caption: 'Project API (ASP.NET)'
+    },
+    
+    {
+        link: 'https://drive.google.com/file/d/1vHg0Tu6Bp_BmW0OEjPGKmzarJten00ks/view?usp=sharing',
+        caption: 'Avatar (React Native)'
+    },
+    {
+        link: 'https://wpl-imran.koyeb.app/projects',
+        caption: 'Kaart spel (Express)'
+    },
+    {
+        link: 'https://adminui-jk6j.onrender.com/login',
+        caption: 'Admin UI (Express)'
+    },
+    
+    {
+        link: 'https://github.com/Imrxng/librarycsharp',
+        caption: 'Bibliotheek (C#)'
+    },
+    
 ]
 
 
@@ -113,20 +111,12 @@ export const SERVICEBOXES_EN: IServicesBoxes = {
 
 export const PROJECTS_EN: Project[] = [
     {
-        link: 'https://adminui-jk6j.onrender.com/login',
-        caption: 'Admin UI (Express)'
+        link: 'https://teach-me-ui.vercel.app/#/login',
+        caption: 'Teach-Me (Big project)'
     },
     {
-        link: 'https://imrxng.github.io/fitimproving/',
-        caption: 'Webshop (HTML & CSS)'
-    },
-    {
-        link: 'https://github.com/Imrxng/librarycsharp',
-        caption: 'Library (C#)'
-    },
-    {
-        link: 'https://wpl-imran.koyeb.app/projects',
-        caption: 'Card Game (Express)'
+        link: 'https://www.alpha-rijschool.be/',
+        caption: 'Driving School (Next.js)'
     },
     {
         link: 'https://github.com/Imrxng/project_api_ontwikkeling',
@@ -137,11 +127,15 @@ export const PROJECTS_EN: Project[] = [
         caption: 'Avatar (React Native)'
     },
     {
-        link: 'https://teach-me-ui.vercel.app/#/login',
-        caption: 'Teach-Me (Big project)'
+        link: 'https://wpl-imran.koyeb.app/projects',
+        caption: 'Card Game (Express)'
     },
     {
-        link: 'https://www.alpha-rijschool.be/',
-        caption: 'Driving School (Next.js)'
-    }
+        link: 'https://adminui-jk6j.onrender.com/login',
+        caption: 'Admin UI (Express)'
+    },
+    {
+        link: 'https://github.com/Imrxng/librarycsharp',
+        caption: 'Library (C#)'
+    },
 ]
