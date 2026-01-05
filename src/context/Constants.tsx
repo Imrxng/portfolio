@@ -71,20 +71,23 @@ export const PROJECTS: Project[] = [
         link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Kaart spel (Express)'
     },
-    // {
-    //     link: 'https://adminui-jk6j.onrender.com/login',
-    //     caption: 'Admin UI (Express)'
-    // },
+    
     {
         link: 'https://rdscarcenter.be',
         caption: 'RDS Car Center (Next.js)'
     },
-    
     {
-        link: 'https://github.com/Imrxng/librarycsharp',
-        caption: 'Bibliotheek (C#)'
+        link: 'https://al-amal.vercel.app/',
+        caption: 'Vereniging De Hoop (Next.js)'
     },
-    
+    // {
+    //     link: 'https://github.com/Imrxng/librarycsharp',
+    //     caption: 'Bibliotheek (C#)'
+    // },
+    // {
+    //     link: 'https://adminui-jk6j.onrender.com/login',
+    //     caption: 'Admin UI (Express)'
+    // }
 ]
 
 
@@ -142,16 +145,21 @@ export const PROJECTS_EN: Project[] = [
         link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Card Game (Express)'
     },
-    // {
-    //     link: 'https://adminui-jk6j.onrender.com/login',
-    //     caption: 'Admin UI (Express)'
-    // },
+    
     {
         link: 'https://rdscarcenter.be',
         caption: 'RDS Car Center (Next.js)'
     },
     {
-        link: 'https://github.com/Imrxng/librarycsharp',
-        caption: 'Library (C#)'
+        link: 'https://al-amal.vercel.app/',
+        caption: 'Assoc. The Hope (Next.js)'
     },
+    // {
+    //     link: 'https://github.com/Imrxng/librarycsharp',
+    //     caption: 'Library (C#)'
+    // },
+    // {
+    //     link: 'https://adminui-jk6j.onrender.com/login',
+    //     caption: 'Admin UI (Express)'
+    // }
 ]
