@@ -71,9 +71,13 @@ export const PROJECTS: Project[] = [
         link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Kaart spel (Express)'
     },
+    // {
+    //     link: 'https://adminui-jk6j.onrender.com/login',
+    //     caption: 'Admin UI (Express)'
+    // },
     {
-        link: 'https://adminui-jk6j.onrender.com/login',
-        caption: 'Admin UI (Express)'
+        link: 'https://rdscarcenter.be',
+        caption: 'RDS Car Center (Next.js)'
     },
     
     {
@@ -138,9 +142,13 @@ export const PROJECTS_EN: Project[] = [
         link: 'https://wpl-imran.koyeb.app/projects',
         caption: 'Card Game (Express)'
     },
+    // {
+    //     link: 'https://adminui-jk6j.onrender.com/login',
+    //     caption: 'Admin UI (Express)'
+    // },
     {
-        link: 'https://adminui-jk6j.onrender.com/login',
-        caption: 'Admin UI (Express)'
+        link: 'https://rdscarcenter.be',
+        caption: 'RDS Car Center (Next.js)'
     },
     {
         link: 'https://github.com/Imrxng/librarycsharp',
