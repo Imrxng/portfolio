@@ -7,8 +7,8 @@ const CONTACT_INFO = () => {
     <div id="contactmeContactPage">
       <div className="contactemoj">
         <i className="fa-regular fa-envelope"></i>
-        <a href="mailto:imran.ghaddoura@student.ap.be">
-          imran.ghaddoura@student.ap.be
+        <a href="mailto:imgha@hotmail.com">
+          imgha@hotmail.com
         </a>
       </div>
       <div className="contactemoj">
