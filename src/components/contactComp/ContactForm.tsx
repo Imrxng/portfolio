@@ -21,27 +21,34 @@ const CONTACT_FORM = () => {
     return null;
   };
 
-  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const inputs: ContactFormInputs = {
-      name: formData.get("name") as string,
-      mail: formData.get("mail") as string,
-      text: formData.get("text") as string,
-    };
+const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
 
-    const validationError = validateInput(inputs);
-    if (validationError) {
-      setError(validationError);
-      setSuccess(null);
-    } else {
-      setError(null);
-      setSuccess('Formulier succesvol verzonden!');
-      handleSubmit(event);
-      (event.target as HTMLFormElement).reset();
+  const form = event.currentTarget;
+  const formData = new FormData(form);
 
-    }
+  const inputs = {
+    name: formData.get("name") as string,
+    mail: formData.get("email") as string,
+    text: formData.get("message") as string,
   };
+
+  const validationError = validateInput(inputs);
+  if (validationError) {
+    setError(validationError);
+    setSuccess(null);
+    return;
+  }
+
+  setError(null);
+  await handleSubmit(event); // ⬅️ laat Formspree zijn ding doen
+
+  if (state.succeeded) {
+    setSuccess("Formulier succesvol verzonden!");
+    form.reset();
+  }
+};
+
 
   if (LANGUAGE === 'nl') {
     return (
@@ -56,13 +63,13 @@ const CONTACT_FORM = () => {
           <label htmlFor="mail">Mail:</label>
           <input
             type="text"
-            name="mail"
+            name="email"
             id="mail"
             placeholder="Mail"
           />
           <label htmlFor="text">Vraag:</label>
           <textarea
-            name="text"
+            name="message"
             id="text"
             cols={30}
             rows={10}
