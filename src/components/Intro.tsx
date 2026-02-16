@@ -26,7 +26,7 @@ const INTRO = () => {
                 }
                 
                 <div id="Cv_Message">
-                    <a href={`/download/CV_Imran_Ghaddoura.pdf?v=${Date.now()}`}  className="Button" download="CV_Imran_Ghaddoura.pdf">CV <i className="fa-solid fa-download"></i></a>
+                    <a href="./download/CV_Imran_Ghaddoura_Motivatie.pdf" className="Button" download="CV_Imran_Ghaddoura.pdf">CV <i className="fa-solid fa-download"></i></a>
                     <Link to={"/portfolio/contact"} id="talkButton">{LANGUAGE === 'nl' ? <>Stuur een bericht</> : <>Let's talk</>} <i className="fa-regular fa-paper-plane"></i></Link>
                 </div>
             </div>
